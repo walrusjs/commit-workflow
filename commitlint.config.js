@@ -1,3 +1,1 @@
-module.exports = {
-  extends: ['./packages/commitlint-config-emoji/lib/index.js']
-};
+module.exports = require('./packages/commitlint-config-emoji/lib').default;
