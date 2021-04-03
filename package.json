@@ -12,6 +12,8 @@
     "build": "lerna run build",
     "prettier": "pretty-quick --staged",
     "test": "walrus test",
+    "commit": "node ./packages/commit-cli/lib/cli.js",
+    "lint:commit": "commitlint",
     "prepare": "husky install"
   },
   "devDependencies": {
