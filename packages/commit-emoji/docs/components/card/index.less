@@ -1,0 +1,42 @@
+@import (reference) '~antd/es/style/themes/default';
+
+.card {
+  position: relative;
+  display: flex;
+  border-radius: 4px;
+  background: @white;
+  flex: 1 1;
+  transition: all 0.25s ease-out;
+  text-align: center;
+  overflow: hidden;
+  box-shadow: @shadow-2;
+  height: 120px;
+}
+
+.emoji {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 16px;
+
+  span {
+    cursor: pointer;
+    font-size: 45px;
+  }
+}
+
+.info {
+  cursor: pointer;
+  padding: 16px;
+  text-align: left;
+}
+
+.code {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.description {
+  margin-top: 8px;
+}

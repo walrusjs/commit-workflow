@@ -1,0 +1,16 @@
+{
+  "name": "@walrus/commitlint-config-emoji",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "license": "MIT",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "rimraf lib && tsc -p tsconfig.build.json"
+  },
+  "dependencies": {
+    "@walrus/commitlint-plugin-emoji": "^1.0.0"
+  }
+}

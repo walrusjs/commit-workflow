@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "declaration": true,
+    "target": "es5",
+    "jsx": "react-jsx",
+    "module": "CommonJS",
+    "lib": ["esnext", "dom"],
+    "baseUrl": ".",
+    "paths": {
+      "@walrus/commit-emoji": ["./packages/commit-emoji/src"],
+      "@walrus/commitlint-config-emoji": ["./packages/commitlint-config-emoji/src"],
+      "@walrus/commitlint-plugin-emoji": ["./packages/commitlint-plugin-emoji/src"],
+    }
+  }
+}
