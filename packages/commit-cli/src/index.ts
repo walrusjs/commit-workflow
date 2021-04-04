@@ -12,7 +12,7 @@ export async function commit(config: CommitConfig = {}) {
   const types = commitTypes.map((item) => {
     const value = `${item.code ? item.code + ' ' : ''}` + item.commitType;
     return {
-      name: `${value}: ${item.zhDesc}`,
+      name: `${value}: ${item['zh-CN']}`,
       value
     };
   });
