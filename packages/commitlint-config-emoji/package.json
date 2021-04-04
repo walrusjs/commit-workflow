@@ -11,6 +11,11 @@
     "build": "rimraf lib && tsc -p tsconfig.build.json"
   },
   "dependencies": {
+    "@walrus/commit-types": "^1.0.0",
     "@walrus/commitlint-plugin-emoji": "^1.0.0"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
   }
 }

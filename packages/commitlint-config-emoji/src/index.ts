@@ -1,7 +1,8 @@
 import { RuleConfigSeverity } from '@commitlint/types';
 import type { LintOptions, QualifiedRules } from '@commitlint/types';
+import { types } from '@walrus/commit-types';
 import emojiPlugin from '@walrus/commitlint-plugin-emoji';
-import { parserOpts, types } from './config';
+import { parserOpts } from './config';
 
 const { Error } = RuleConfigSeverity;
 
