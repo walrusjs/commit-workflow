@@ -9,5 +9,12 @@
   ],
   "scripts": {
     "build": "rimraf lib && tsc -p tsconfig.build.json"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
+  },
+  "dependencies": {
+    "@walrus/commit-types": "^1.0.0"
   }
 }

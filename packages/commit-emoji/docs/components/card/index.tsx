@@ -1,5 +1,5 @@
 import React from 'react';
-import { message } from 'antd';
+import { message, Tag } from 'antd';
 import { EmojiInfo } from '@walrus/commit-emoji';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import styles from './index.less';
@@ -36,7 +36,9 @@ export const Card: React.FC<CardProps> = ({ info }) => {
         <CopyToClipboard text={info.code} onCopy={handlePass}>
           <div className={styles.code}>{info.code}</div>
         </CopyToClipboard>
-        <div className={styles.description}>{info.description}</div>
+        <Tag >{info.commitType}</Tag>
+        <div className={styles.description}>{info.'zh-CN'}</div>
+        <div className={styles.description}>{info.'en-US'}</div>
       </div>
     </div>
   );
