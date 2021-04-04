@@ -13,5 +13,9 @@
   "dependencies": {
     "@walrus/commit-emoji": "^1.0.0",
     "emoji-name-map": "^1.2.9"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
   }
 }
