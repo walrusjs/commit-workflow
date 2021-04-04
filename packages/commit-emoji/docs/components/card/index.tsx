@@ -36,9 +36,9 @@ export const Card: React.FC<CardProps> = ({ info }) => {
         <CopyToClipboard text={info.code} onCopy={handlePass}>
           <div className={styles.code}>{info.code}</div>
         </CopyToClipboard>
-        <Tag >{info.commitType}</Tag>
-        <div className={styles.description}>{info.'zh-CN'}</div>
-        <div className={styles.description}>{info.'en-US'}</div>
+        <Tag>{info.commitType}</Tag>
+        <div className={styles.description}>{info['zh-CN']}</div>
+        <div className={styles.description}>{info['en-US']}</div>
       </div>
     </div>
   );
