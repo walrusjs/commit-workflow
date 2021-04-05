@@ -1,6 +1,6 @@
 {
   "name": "@walrus/commitlint-config-emoji",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "license": "MIT",
@@ -11,8 +11,8 @@
     "build": "rimraf lib && tsc -p tsconfig.build.json"
   },
   "dependencies": {
-    "@walrus/commit-types": "^1.0.0",
-    "@walrus/commitlint-plugin-emoji": "^1.0.0"
+    "@walrus/commit-types": "1.0.1",
+    "@walrus/commitlint-plugin-emoji": "1.0.1"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org",

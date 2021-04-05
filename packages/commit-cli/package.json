@@ -1,6 +1,6 @@
 {
   "name": "@walrus/commit",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
   "repository": "git@github.com:walrusjs/commit.git",
@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "@walrus/cli-utils": "^1.1.1",
-    "@walrus/commit-emoji": "^1.0.0"
+    "@walrus/commit-emoji": "1.0.1"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org",
