@@ -10,10 +10,11 @@ export async function commit(config: CommitConfig = {}) {
   const { types: commitTypes = emojis, skipPush, skipCommit } = config;
 
   const types = commitTypes.map((item) => {
-    const value = `${item.code ? item.code + ' ' : ''}` + item.commitType;
+    const value = `${item.emoji}(${item.code}) ${item.commitType}`;
+
     return {
       name: `${value}: ${item['zh-CN']}`,
-      value
+      value: `${item.emoji} ${item.commitType}`
     };
   });
 
