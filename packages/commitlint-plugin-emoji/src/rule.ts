@@ -5,7 +5,8 @@ export const emoji: Rule = (parsed) => {
   const { raw } = parsed;
 
   const regex = /^(:\w*:)\s.*/gm;
-  const unicodeRegex = /(\ud83c[\udf00-\udfff]|\ud83d[\udc00-\ude4f\ude80-\udeff]|[\u2600-\u2B55])\s.*/gm;
+  // const unicodeRegex = /(\ud83c[\udf00-\udfff]|\ud83d[\udc00-\ude4f\ude80-\udeff]|[\u2600-\u2B55])\s.*/gm;
+  const unicodeRegex = /(\p{Emoji_Modifier_Base}\p{Emoji_Modifier}?|\p{Emoji_Presentation}|\p{Emoji}\uFE0F)\s.*/gu;
 
   const result = regex.exec(raw);
   const unicodeResult = unicodeRegex.exec(raw);

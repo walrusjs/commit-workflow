@@ -33,4 +33,10 @@ describe('valid commit', () => {
 
     expect(valid).toBeTruthy();
   });
+
+  it('$ ♻️ refactor(button): 代码重构 -> passed', async () => {
+    const { valid, errors } = await lint('♻️ style(button): 优化按钮样式');
+
+    expect(valid).toBeTruthy();
+  });
 });
