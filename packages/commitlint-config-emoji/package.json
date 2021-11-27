@@ -1,6 +1,6 @@
 {
   "name": "@walrus/commitlint-config-emoji",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "license": "MIT",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -8,8 +8,8 @@
     "lib"
   ],
   "dependencies": {
-    "@walrus/commit-types": "1.0.1",
-    "@walrus/commitlint-plugin-emoji": "1.0.2"
+    "@walrus/commit-types": "1.0.2",
+    "@walrus/commitlint-plugin-emoji": "1.0.3"
   },
   "publishConfig": {
     "access": "public",

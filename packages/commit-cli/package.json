@@ -1,6 +1,6 @@
 {
   "name": "@walrus/commit",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "repository": "git@github.com:walrusjs/commit.git",
   "license": "MIT",
   "author": "wangxingkang <wang_xingkang@qq.com>",
@@ -12,7 +12,7 @@
   ],
   "dependencies": {
     "@walrus/cli-utils": "^1.1.1",
-    "@walrus/commit-emoji": "1.0.1"
+    "@walrus/commit-emoji": "1.0.2"
   },
   "publishConfig": {
     "access": "public",
