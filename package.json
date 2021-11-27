@@ -1,21 +1,33 @@
 {
   "name": "commit-workflow",
-  "private": true,
   "version": "1.0.0",
-  "main": "index.js",
+  "private": true,
   "repository": "git@github.com:walrusjs/commit-workflow.git",
-  "author": "wangxingkang <wang_xingkang@qq.com>",
   "license": "MIT",
+  "author": "wangxingkang <wang_xingkang@qq.com>",
+  "main": "index.js",
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
-    "start": "dumi dev",
-    "site": "dumi build",
-    "build": "lerna run build",
-    "prettier": "pretty-quick --staged",
-    "test": "walrus test",
+    "build": "father-build",
     "commit": "node ./packages/commit-cli/lib/cli.js",
+    "lint-staged": "lint-staged",
     "lint:commit": "commitlint",
+    "prepare": "husky install",
+    "prettier": "pretty-quick --staged",
     "release": "walrus release",
-    "prepare": "husky install"
+    "site": "dumi build",
+    "start": "dumi dev",
+    "test": "walrus test"
+  },
+  "lint-staged": {
+    "*.{js,jsx,less,md,json}": [
+      "prettier --write"
+    ],
+    "*.ts?(x)": [
+      "prettier --parser=typescript --write"
+    ]
   },
   "devDependencies": {
     "@commitlint/cli": "14.1.0",
@@ -26,19 +38,20 @@
     "@walrus/plugin-release": "1.14.0",
     "@walrus/plugin-run": "0.5.0",
     "@walrus/plugin-test": "1.1.0",
-    "antd": "4.16.13",
-    "dumi": "1.1.32",
+    "antd": "4.17.2",
+    "babel-plugin-add-module-exports": "^1.0.4",
+    "dumi": "1.1.33",
+    "father-build": "1.20.4",
     "husky": "7.0.4",
     "lerna": "4.0.0",
-    "prettier": "2.4.1",
+    "lint-staged": "12.1.2",
+    "prettier": "2.5.0",
+    "prettier-plugin-packagejson": "2.2.15",
     "pretty-quick": "3.1.2",
     "react": "17.0.2",
     "react-copy-to-clipboard": "5.0.4",
     "react-dom": "17.0.2",
     "rimraf": "3.0.2",
     "typescript": "4.5.2"
-  },
-  "workspaces": [
-    "packages/*"
-  ]
+  }
 }
