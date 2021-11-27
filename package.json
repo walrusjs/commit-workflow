@@ -16,7 +16,7 @@
     "lint:commit": "commitlint",
     "prepare": "husky install",
     "prettier": "pretty-quick --staged",
-    "release": "walrus release --commit-message '🔖 chore(release): publish",
+    "release": "walrus release --commit-message '🔖 chore(release): publish'",
     "site": "dumi build",
     "start": "dumi dev",
     "test": "walrus test"
