@@ -1,20 +1,17 @@
 {
   "name": "@walrus/commit-emoji",
   "version": "1.0.1",
+  "license": "MIT",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
-  "license": "MIT",
   "files": [
     "lib"
   ],
-  "scripts": {
-    "build": "rimraf lib && tsc -p tsconfig.build.json"
-  },
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org",
-    "access": "public"
-  },
   "dependencies": {
     "@walrus/commit-types": "1.0.1"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
   }
 }
